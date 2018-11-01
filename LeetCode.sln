@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0026. Remove Duplicates from Sorted Array", "0026. Remove Duplicates from Sorted Array\0026. Remove Duplicates from Sorted Array.vcxproj", "{2323EB3C-FAC8-46C0-928D-9379B4CBE660}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0122. Best Time to Buy and Sell Stock II", "0122. Best Time to Buy and Sell Stock II\0122. Best Time to Buy and Sell Stock II.vcxproj", "{3B66F3A4-F876-4045-8A87-F97F653C4234}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{2323EB3C-FAC8-46C0-928D-9379B4CBE660}.Release|x64.Build.0 = Release|x64
 		{2323EB3C-FAC8-46C0-928D-9379B4CBE660}.Release|x86.ActiveCfg = Release|Win32
 		{2323EB3C-FAC8-46C0-928D-9379B4CBE660}.Release|x86.Build.0 = Release|Win32
+		{3B66F3A4-F876-4045-8A87-F97F653C4234}.Debug|x64.ActiveCfg = Debug|x64
+		{3B66F3A4-F876-4045-8A87-F97F653C4234}.Debug|x64.Build.0 = Debug|x64
+		{3B66F3A4-F876-4045-8A87-F97F653C4234}.Debug|x86.ActiveCfg = Debug|Win32
+		{3B66F3A4-F876-4045-8A87-F97F653C4234}.Debug|x86.Build.0 = Debug|Win32
+		{3B66F3A4-F876-4045-8A87-F97F653C4234}.Release|x64.ActiveCfg = Release|x64
+		{3B66F3A4-F876-4045-8A87-F97F653C4234}.Release|x64.Build.0 = Release|x64
+		{3B66F3A4-F876-4045-8A87-F97F653C4234}.Release|x86.ActiveCfg = Release|Win32
+		{3B66F3A4-F876-4045-8A87-F97F653C4234}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

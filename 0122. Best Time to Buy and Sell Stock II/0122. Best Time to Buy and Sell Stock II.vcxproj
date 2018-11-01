@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{2323EB3C-FAC8-46C0-928D-9379B4CBE660}</ProjectGuid>
+    <ProjectGuid>{3B66F3A4-F876-4045-8A87-F97F653C4234}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My0026RemoveDuplicatesfromSortedArray</RootNamespace>
+    <RootNamespace>My0122BestTimetoBuyandSellStockII</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -147,13 +147,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="0026. Remove Duplicates from Sorted Array.h" />
+    <ClInclude Include="0122. Best Time to Buy and Sell Stock II.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TEST.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

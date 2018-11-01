@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="0026. Remove Duplicates from Sorted Array.h">
+    <ClInclude Include="0122. Best Time to Buy and Sell Stock II.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -23,8 +23,5 @@
     <ClCompile Include="TEST.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="README.md" />
   </ItemGroup>
 </Project>
