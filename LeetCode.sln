@@ -11,6 +11,13 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0189. Rotate Array", "0189.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0217. Contains Duplicate", "0217. Contains Duplicate\0217. Contains Duplicate.vcxproj", "{DAD1B6C2-C0D1-4B00-AA69-50CCCAAF2541}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4C06DC4D-D922-4C11-89D3-F16E70F805F9}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0136. Single Number", "0136. Single Number\0136. Single Number.vcxproj", "{3FB6DE5F-CD38-4125-AC04-EADD7CDDE31C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +58,14 @@ Global
 		{DAD1B6C2-C0D1-4B00-AA69-50CCCAAF2541}.Release|x64.Build.0 = Release|x64
 		{DAD1B6C2-C0D1-4B00-AA69-50CCCAAF2541}.Release|x86.ActiveCfg = Release|Win32
 		{DAD1B6C2-C0D1-4B00-AA69-50CCCAAF2541}.Release|x86.Build.0 = Release|Win32
+		{3FB6DE5F-CD38-4125-AC04-EADD7CDDE31C}.Debug|x64.ActiveCfg = Debug|x64
+		{3FB6DE5F-CD38-4125-AC04-EADD7CDDE31C}.Debug|x64.Build.0 = Debug|x64
+		{3FB6DE5F-CD38-4125-AC04-EADD7CDDE31C}.Debug|x86.ActiveCfg = Debug|Win32
+		{3FB6DE5F-CD38-4125-AC04-EADD7CDDE31C}.Debug|x86.Build.0 = Debug|Win32
+		{3FB6DE5F-CD38-4125-AC04-EADD7CDDE31C}.Release|x64.ActiveCfg = Release|x64
+		{3FB6DE5F-CD38-4125-AC04-EADD7CDDE31C}.Release|x64.Build.0 = Release|x64
+		{3FB6DE5F-CD38-4125-AC04-EADD7CDDE31C}.Release|x86.ActiveCfg = Release|Win32
+		{3FB6DE5F-CD38-4125-AC04-EADD7CDDE31C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
