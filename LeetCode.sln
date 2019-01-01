@@ -22,6 +22,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0350. Intersection of Two A
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0066. Plus One", "0066. Plus One\0066. Plus One.vcxproj", "{15742755-59EA-4EF7-BAA3-ED44E4C324A5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0283. Move Zeroes", "0283. Move Zeroes\0283. Move Zeroes.vcxproj", "{FD239D17-4A1A-4B8A-9D34-28643A8EB058}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -86,6 +88,14 @@ Global
 		{15742755-59EA-4EF7-BAA3-ED44E4C324A5}.Release|x64.Build.0 = Release|x64
 		{15742755-59EA-4EF7-BAA3-ED44E4C324A5}.Release|x86.ActiveCfg = Release|Win32
 		{15742755-59EA-4EF7-BAA3-ED44E4C324A5}.Release|x86.Build.0 = Release|Win32
+		{FD239D17-4A1A-4B8A-9D34-28643A8EB058}.Debug|x64.ActiveCfg = Debug|x64
+		{FD239D17-4A1A-4B8A-9D34-28643A8EB058}.Debug|x64.Build.0 = Debug|x64
+		{FD239D17-4A1A-4B8A-9D34-28643A8EB058}.Debug|x86.ActiveCfg = Debug|Win32
+		{FD239D17-4A1A-4B8A-9D34-28643A8EB058}.Debug|x86.Build.0 = Debug|Win32
+		{FD239D17-4A1A-4B8A-9D34-28643A8EB058}.Release|x64.ActiveCfg = Release|x64
+		{FD239D17-4A1A-4B8A-9D34-28643A8EB058}.Release|x64.Build.0 = Release|x64
+		{FD239D17-4A1A-4B8A-9D34-28643A8EB058}.Release|x86.ActiveCfg = Release|Win32
+		{FD239D17-4A1A-4B8A-9D34-28643A8EB058}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
