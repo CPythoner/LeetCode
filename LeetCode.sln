@@ -32,6 +32,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0048. Rotate Image", "0048.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0344. Reverse String", "0344. Reverse String\0344. Reverse String.vcxproj", "{F9494847-99D2-4EB5-AD1A-A89793112BE6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0007. Reverse Integer", "0007. Reverse Integer\0007. Reverse Integer.vcxproj", "{A7557D58-D874-49D0-82EE-7241069D4E82}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -136,6 +138,14 @@ Global
 		{F9494847-99D2-4EB5-AD1A-A89793112BE6}.Release|x64.Build.0 = Release|x64
 		{F9494847-99D2-4EB5-AD1A-A89793112BE6}.Release|x86.ActiveCfg = Release|Win32
 		{F9494847-99D2-4EB5-AD1A-A89793112BE6}.Release|x86.Build.0 = Release|Win32
+		{A7557D58-D874-49D0-82EE-7241069D4E82}.Debug|x64.ActiveCfg = Debug|x64
+		{A7557D58-D874-49D0-82EE-7241069D4E82}.Debug|x64.Build.0 = Debug|x64
+		{A7557D58-D874-49D0-82EE-7241069D4E82}.Debug|x86.ActiveCfg = Debug|Win32
+		{A7557D58-D874-49D0-82EE-7241069D4E82}.Debug|x86.Build.0 = Debug|Win32
+		{A7557D58-D874-49D0-82EE-7241069D4E82}.Release|x64.ActiveCfg = Release|x64
+		{A7557D58-D874-49D0-82EE-7241069D4E82}.Release|x64.Build.0 = Release|x64
+		{A7557D58-D874-49D0-82EE-7241069D4E82}.Release|x86.ActiveCfg = Release|Win32
+		{A7557D58-D874-49D0-82EE-7241069D4E82}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
