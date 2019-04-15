@@ -48,6 +48,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0142. Linked List Cycle II"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0160. Intersection of Two Linked Lists", "0160. Intersection of Two Linked Lists\0160. Intersection of Two Linked Lists.vcxproj", "{5EBB7ECB-3127-4FA1-A274-1405A8587050}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0206. Reverse Linked List", "0206. Reverse Linked List\0206. Reverse Linked List.vcxproj", "{D8582853-54E6-44B3-97A9-FBBC0A646BAB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -216,6 +218,14 @@ Global
 		{5EBB7ECB-3127-4FA1-A274-1405A8587050}.Release|x64.Build.0 = Release|x64
 		{5EBB7ECB-3127-4FA1-A274-1405A8587050}.Release|x86.ActiveCfg = Release|Win32
 		{5EBB7ECB-3127-4FA1-A274-1405A8587050}.Release|x86.Build.0 = Release|Win32
+		{D8582853-54E6-44B3-97A9-FBBC0A646BAB}.Debug|x64.ActiveCfg = Debug|x64
+		{D8582853-54E6-44B3-97A9-FBBC0A646BAB}.Debug|x64.Build.0 = Debug|x64
+		{D8582853-54E6-44B3-97A9-FBBC0A646BAB}.Debug|x86.ActiveCfg = Debug|Win32
+		{D8582853-54E6-44B3-97A9-FBBC0A646BAB}.Debug|x86.Build.0 = Debug|Win32
+		{D8582853-54E6-44B3-97A9-FBBC0A646BAB}.Release|x64.ActiveCfg = Release|x64
+		{D8582853-54E6-44B3-97A9-FBBC0A646BAB}.Release|x64.Build.0 = Release|x64
+		{D8582853-54E6-44B3-97A9-FBBC0A646BAB}.Release|x86.ActiveCfg = Release|Win32
+		{D8582853-54E6-44B3-97A9-FBBC0A646BAB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
