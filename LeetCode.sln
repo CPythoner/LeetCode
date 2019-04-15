@@ -46,6 +46,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0141. Linked List Cycle", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0142. Linked List Cycle II", "0142. Linked List Cycle II\0142. Linked List Cycle II.vcxproj", "{6231E005-8EA3-4B65-ACA3-00FD6A4D075E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0160. Intersection of Two Linked Lists", "0160. Intersection of Two Linked Lists\0160. Intersection of Two Linked Lists.vcxproj", "{5EBB7ECB-3127-4FA1-A274-1405A8587050}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -206,6 +208,14 @@ Global
 		{6231E005-8EA3-4B65-ACA3-00FD6A4D075E}.Release|x64.Build.0 = Release|x64
 		{6231E005-8EA3-4B65-ACA3-00FD6A4D075E}.Release|x86.ActiveCfg = Release|Win32
 		{6231E005-8EA3-4B65-ACA3-00FD6A4D075E}.Release|x86.Build.0 = Release|Win32
+		{5EBB7ECB-3127-4FA1-A274-1405A8587050}.Debug|x64.ActiveCfg = Debug|x64
+		{5EBB7ECB-3127-4FA1-A274-1405A8587050}.Debug|x64.Build.0 = Debug|x64
+		{5EBB7ECB-3127-4FA1-A274-1405A8587050}.Debug|x86.ActiveCfg = Debug|Win32
+		{5EBB7ECB-3127-4FA1-A274-1405A8587050}.Debug|x86.Build.0 = Debug|Win32
+		{5EBB7ECB-3127-4FA1-A274-1405A8587050}.Release|x64.ActiveCfg = Release|x64
+		{5EBB7ECB-3127-4FA1-A274-1405A8587050}.Release|x64.Build.0 = Release|x64
+		{5EBB7ECB-3127-4FA1-A274-1405A8587050}.Release|x86.ActiveCfg = Release|Win32
+		{5EBB7ECB-3127-4FA1-A274-1405A8587050}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
