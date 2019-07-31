@@ -43,6 +43,7 @@ public class Foo {
  */
 
 #include <mutex>
+#include <functional>
 
 using namespace std;
 

@@ -38,6 +38,7 @@ class FooBar {
  */
 
 #include <mutex>
+#include <functional>
 
 using namespace std;
 
