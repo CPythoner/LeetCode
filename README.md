@@ -1,6 +1,8 @@
 # LeetCode
 LeetCode 题解
 
+![LeetCode](https://github.com/CPythoner/LeetCode/blob/master/cover.png?raw=true)
+
 
 
 C++代码工程使用 VS2017 创建并测试。
