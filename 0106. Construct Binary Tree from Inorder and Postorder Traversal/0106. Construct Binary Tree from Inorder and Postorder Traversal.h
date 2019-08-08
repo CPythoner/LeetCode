@@ -36,15 +36,10 @@ using namespace std;
 class Solution {
 public:
     TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder) {
-        return helper(inorder, postorder, 0, postorder.size() - 1, 0, inorder.size() - 1);
+        return helper(inorder, postorder, postorder.size() - 1, 0, inorder.size() - 1);
     }
 
 private:
-    /**
-     * @description: 
-     * @param {type} 
-     * @return: 
-     */
     TreeNode* helper(vector<int>& inorder, vector<int>& postorder, int postend, int inbegin, int inend)
     {
         if (postend < 0 || inbegin > inend) 
@@ -61,8 +56,8 @@ private:
 
         int leftTreeLen = index - inbegin;  // 计算左子树的长度
 
-        root->left = helper(inorder, postorder, postbegin, postbegin + leftTreeLen - 1, inbegin, index - 1);
-        root->right = helper(inorder, postorder, postbegin + leftTreeLen, postend - 1, index + 1, inend);
+        root->left = helper(inorder, postorder, postend - inend + index - 1, inbegin, index - 1);
+        root->right = helper(inorder, postorder, postend - 1, index + 1, inend);
         
         return root;
     }
