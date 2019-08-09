@@ -69,6 +69,8 @@ public:
 
         connect(root->left);
         connect(root->right);
+
+        return root;
     }
 
     Node* connect_1(Node* root) {   // 采用层级遍历的方法，符合题目要求
