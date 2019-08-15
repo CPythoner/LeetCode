@@ -38,23 +38,20 @@ public:
         if (nums.size() == 0)
             return -1;
 
-        int leftTotal = 0, rightTotal = 0;
+        int leftSum = 0, rightSum = 0;
 
         for (int i = 0; i < nums.size(); i++) {
-            rightTotal += nums[i];
+            rightSum += nums[i];
         }
 
-        if (rightTotal == 0)
-            return 0;
-
-        for (int index = 0; index < nums.size() - 1; index++) {
+        for (int index = 0; index < nums.size(); index++) {
             int tmp = nums[index];
-            rightTotal -= tmp;
+            rightSum -= tmp;
 
-            if (leftTotal == rightTotal)
+            if (leftSum == rightSum)
                 return index;
                 
-            leftTotal += tmp;
+            leftSum += tmp;
         }
 
         return -1;
