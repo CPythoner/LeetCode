@@ -5,46 +5,45 @@
 #include <iostream>
 #include <vector>
 
-#define CATCH_CONFIG_MAIN
-#include "../Catch2/single_include/catch.hpp"
+#include <catch2/catch_test_macros.hpp>
 
 using namespace std;
 
 ListNode *CreateList(vector<int> vec)
 {
-	auto beg = vec.begin();
-	auto end = vec.end();
-	ListNode *head = beg == end ? NULL : new ListNode(*beg++);
-	for (ListNode *cur = head; beg != end; cur = cur->next)
-		cur->next = new ListNode(*beg++);
-	return head;
+    auto beg = vec.begin();
+    auto end = vec.end();
+    ListNode *head = beg == end ? NULL : new ListNode(*beg++);
+    for (ListNode *cur = head; beg != end; cur = cur->next)
+        cur->next = new ListNode(*beg++);
+    return head;
 }
 
 void CoutAndClear(ListNode *head)
 {
-	while (head)
-	{
-		cout << head->val;
-		if (head->next) 
-			cout << "->";
-		ListNode *del = head;
-		head = head->next;
-		delete del;
-	}
-	cout << endl;
+    while (head)
+    {
+        cout << head->val;
+        if (head->next)
+            cout << "->";
+        ListNode *del = head;
+        head = head->next;
+        delete del;
+    }
+    cout << endl;
 }
 
 TEST_CASE("Remove Nth Node From End of List", "[removeNthFromEnd]")
 {
-	Solution solution;
+    Solution solution;
 
-	SECTION("1")
-	{
-		vector<int> vec{ 1,2,3,4,5 };
-		ListNode* head = CreateList(vec);
-		ListNode *p = solution.removeNthFromEnd(head, 2);
-		CoutAndClear(p);
-	}
+    SECTION("1")
+    {
+        vector<int> vec{ 1,2,3,4,5 };
+        ListNode* head = CreateList(vec);
+        ListNode *p = solution.removeNthFromEnd(head, 2);
+        CoutAndClear(p);
+    }
 
-	system("pause");
+    system("pause");
 }
