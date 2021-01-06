@@ -3,33 +3,32 @@
 
 #include "0008. String to Integer.h"
 
-#define CATCH_CONFIG_MAIN
-#include "../Catch2/single_include/catch.hpp"
+#include <catch2/catch_test_macros.hpp>
 
 TEST_CASE("String to Integer", "[myAtoi]")
 {
-	Solution solution;
+    Solution solution;
 
-	SECTION("1")
-	{
-		REQUIRE(solution.myAtoi("42") == 42);
-	}
-	SECTION("2")
-	{
-		REQUIRE(solution.myAtoi("   -42") == -42);
-	}
-	SECTION("3")
-	{
-		REQUIRE(solution.myAtoi("4193 with words") == 4193);
-	}
-	SECTION("4")
-	{
-		REQUIRE(solution.myAtoi("words and 987") == 0);
-	}
-	SECTION("5")
-	{
-		REQUIRE(solution.myAtoi("-91283472332") == -2147483648);
-	}
+    SECTION("1")
+    {
+        REQUIRE(solution.myAtoi("42") == 42);
+    }
+    SECTION("2")
+    {
+        REQUIRE(solution.myAtoi("   -42") == -42);
+    }
+    SECTION("3")
+    {
+        REQUIRE(solution.myAtoi("4193 with words") == 4193);
+    }
+    SECTION("4")
+    {
+        REQUIRE(solution.myAtoi("words and 987") == 0);
+    }
+    SECTION("5")
+    {
+        REQUIRE(solution.myAtoi("-91283472332") == -2147483648);
+    }
 
-	system("pause");
+    system("pause");
 }
