@@ -1,8 +1,7 @@
 cmake_minimum_required(VERSION 3.0.0)
 project(LeetCode VERSION 0.1.0)
 
-add_subdirectory(${CMAKE_SOURCE_DIR}/Catch2)
-
+# get all subdirectories in the curdir
 macro(SUBDIRLIST result curdir)
     file(GLOB children RELATIVE ${curdir} ${curdir}/*)
     set(dirlist "")
@@ -19,26 +18,29 @@ macro(SUBDIRLIST result curdir)
     set(${result} ${dirlist})
 endmacro()
 
+# get all files in the directory
 macro(GETFILELIST result curdir)
     file(GLOB children RELATIVE ${curdir} ${curdir}/*)
-    set(dirlist "")
+    set(filelist "")
     foreach(child ${children})
-        # MESSAGE(STATUS "===" ${child})
         if(NOT (IS_DIRECTORY ${curdir}/${child}))
-            LIST(APPEND dirlist ${child})
+            LIST(APPEND filelist ${child})
         endif()
     endforeach()
-    set(${result} ${dirlist})
+    set(${result} ${filelist})
 endmacro()
 
+# get all subdirectories
 SUBDIRLIST(subdirs ${CMAKE_CURRENT_SOURCE_DIR})
 
-FOREACH(subdir ${subdirs})
+# add_subdirectory if the subdirectory contains `CMakeLists.txt`
+foreach(subdir ${subdirs})
     GETFILELIST(files ${subdir})
     LIST(FIND files "CMakeLists.txt" RET)
     if (NOT (${RET} EQUAL -1))
         ADD_SUBDIRECTORY(${subdir})
     endif ()
-ENDFOREACH()
+endforeach()
 
-MESSAGE(STATUS ${subdirs})
+# add Catch2 project
+add_subdirectory(${CMAKE_SOURCE_DIR}/Catch2)
