@@ -1,5 +1,5 @@
 
-PROJECT(0001TwoSum)
+PROJECT(0142LinkedListCycleII)
 
 file(GLOB SOURCES ${CMAKE_CURRENT_SOURCE_DIR} *.c *.cpp *.cxx *.h *.hpp)
 

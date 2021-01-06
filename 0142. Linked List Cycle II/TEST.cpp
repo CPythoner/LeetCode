@@ -5,8 +5,7 @@
 #include <algorithm>
 #include <sstream>
 
-#define CATCH_CONFIG_MAIN
-#include "../Catch2/single_include/catch.hpp"
+#include <catch2/catch_test_macros.hpp>
 
 using namespace std;
 
@@ -118,4 +117,3 @@ TEST_CASE("Linked List Cycle II", "[detectCycle]")
 		REQUIRE(cycleNode == NULL);
 	}
 }
-
