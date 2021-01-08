@@ -1,5 +1,7 @@
+# get name of this directory
+STRING(REGEX REPLACE ".*/(.*)" "\\1" CURRENT_FOLDER ${CMAKE_CURRENT_SOURCE_DIR})
 
-PROJECT(0001TwoSum)
+PROJECT(${CURRENT_FOLDER})
 
 file(GLOB SOURCES ${CMAKE_CURRENT_SOURCE_DIR} *.c *.cpp *.cxx *.h *.hpp)
 file(GLOB UTILSSRCS
