@@ -1,3 +1,5 @@
+![LeetCode](https://github.com/CPythoner/LeetCode/blob/master/cover.png?raw=true)
+
 - [1. 项目说明](#1-项目说明)
 - [2. 题目列表](#2-题目列表)
 - [3. 数据结构分类](#3-数据结构分类)
@@ -18,11 +20,6 @@
   - [4.6 搜索](#46-搜索)
   - [4.7 动态规划](#47-动态规划)
   - [4.8 数学](#48-数学)
-
-
-
-![LeetCode](https://github.com/CPythoner/LeetCode/blob/master/cover.png?raw=true)
-
 
 
 # 1. 项目说明
