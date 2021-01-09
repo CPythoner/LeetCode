@@ -1,11 +1,16 @@
-# LeetCode
-LeetCode 题解
+[[_TOC_]]
+
+
+
+
 
 ![LeetCode](https://github.com/CPythoner/LeetCode/blob/master/cover.png?raw=true)
 
 
 
-C++代码工程使用 VS2017 创建并测试。
+# 1. 项目说明
+
+C++代码工程使用 CMake 创建并测试。
 
 
 
@@ -15,9 +20,11 @@ C++代码工程使用 VS2017 创建并测试。
 
 
 
+# 2. 题目列表
+
 |  #   | Title                                                        | Solution                                                     | Difficulty | Note                                                         |
 | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :--------- | ------------------------------------------------------------ |
-| 0001 | [Two Sum](https://leetcode.com/problems/two-sum/)            | [C++](https://github.com/CPythoner/LeetCode/blob/master/0001.%20Two%20Sum/0001.%20Two%20Sum.h) | Easy       |                                                              |
+| 0001 | [Two Sum](https://leetcode.com/problems/two-sum/)            | [C++](https://github.com/CPythoner/LeetCode/blob/master/0001.%20Two%20Sum/0001.%20Two%20Sum.h) | Easy       | [note](https://github.com/CPythoner/LeetCode/blob/master/0001.TwoSum/README.md) |
 | 0007 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [C++](https://github.com/CPythoner/LeetCode/blob/master/0007.%20Reverse%20Integer/0007.%20Reverse%20Integer.h) | Easy       |                                                              |
 | 0008 | [String to Integer](<https://leetcode.com/problems/string-to-integer-atoi/>) | [C++](https://github.com/CPythoner/LeetCode/blob/master/0007.%20Reverse%20Integer/0007.%20Reverse%20Integer.h) | Medium     |                                                              |
 | 0019 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | [C++](https://github.com/CPythoner/LeetCode/blob/master/0019.%20Remove%20Nth%20Node%20From%20End%20of%20List/0019.%20Remove%20Nth%20Node%20From%20End%20of%20List.h) | Medium     |                                                              |
@@ -132,3 +139,72 @@ C++代码工程使用 VS2017 创建并测试。
 |      |                                                              |                                                              |            |                                                              |
 |      |                                                              |                                                              |            |                                                              |
 
+
+
+# 3. 数据结构分类
+
+## 3.1 数组与矩阵
+
+
+
+## 3.2 链表
+
+
+
+## 3.3 字符串
+
+
+
+## 3.4 栈和队列
+
+
+
+## 3.5 树
+
+
+
+## 3.6 图
+
+
+
+## 3.7 位运算
+
+
+
+## 3.8 哈希表
+
+
+
+
+
+# 4. 解法分类
+
+## 4.1 双指针
+
+
+
+## 4.2 排序
+
+
+
+## 4.3 二分查找
+
+
+
+## 4.4 贪心算法
+
+
+
+## 4.5 分治
+
+
+
+## 4.6 搜索
+
+
+
+## 4.7 动态规划
+
+
+
+## 4.8 数学
