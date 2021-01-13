@@ -2,6 +2,7 @@
 
 #include <set>
 #include <vector>
+#include <algorithm>
 
 /**
  * @brief 比较两个 vector 是否相等
@@ -41,8 +42,10 @@ bool CompareVectorsIgnoreOrder(std::vector<T> const &vec1, std::vector<T> const 
     if (vec1.size() != vec2.size())
         return false;
 
-    std::set<T> set1(vec1.begin(), vec1.end());
-    std::set<T> set2(vec2.begin(), vec2.end());
+    std::vector<T> tmp1 = vec1;
+    std::vector<T> tmp2 = vec2;
+    std::sort(tmp1.begin(), tmp1.end());
+    std::sort(tmp2.begin(), tmp2.end());
 
-    return set1 == set2;
+    return tmp1 == tmp2;
 }
