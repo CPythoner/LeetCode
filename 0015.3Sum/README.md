@@ -89,7 +89,7 @@ public:
             if (i > 0 && nums[i] == nums[i - 1])
                 continue;
 
-            int left = i + 1, right = nums.size() - 1;
+            int left = i + 1, right = len - 1;
             int sum = 0, target = -nums[i];
             while (left < right) {
                 sum = nums[left] + nums[right];
