@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 
 /*
 0036. 删除链表的倒数第N个节点

@@ -1,4 +1,4 @@
-﻿#pragma	once
+#pragma	once
 
 /*
 0125.验证回文字符串
