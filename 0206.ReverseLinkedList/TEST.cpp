@@ -1,4 +1,4 @@
-﻿#include "0206. Reverse Linked List.h"
+#include "0206. Reverse Linked List.h"
 
 #include <iostream>
 #include <vector>

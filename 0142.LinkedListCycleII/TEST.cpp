@@ -1,4 +1,4 @@
-﻿#include "0142. Linked List Cycle II.h"
+#include "0142. Linked List Cycle II.h"
 
 #include <iostream>
 #include <vector>
