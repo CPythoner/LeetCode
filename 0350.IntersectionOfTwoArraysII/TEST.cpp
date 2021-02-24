@@ -27,6 +27,4 @@ TEST_CASE("Intersection of Two Arrays II", "[intersect]")
             cout << item << " ";
         cout << endl;
     }
-
-    system("pause");
 }

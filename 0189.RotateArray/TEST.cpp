@@ -22,6 +22,4 @@ TEST_CASE("Rotate Array", "[rotate]")
         }
         cout << endl;
     }
-
-    system("pause");
 }

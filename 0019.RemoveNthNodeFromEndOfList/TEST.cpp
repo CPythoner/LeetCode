@@ -44,6 +44,4 @@ TEST_CASE("Remove Nth Node From End of List", "[removeNthFromEnd]")
         ListNode *p = solution.removeNthFromEnd(head, 2);
         CoutAndClear(p);
     }
-
-    system("pause");
 }

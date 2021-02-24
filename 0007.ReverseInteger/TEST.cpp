@@ -22,6 +22,4 @@ TEST_CASE("Reverse Integer", "[reverse]")
     {
         REQUIRE(solution.reverse(120) == 21);
     }
-
-    system("pause");
 }

@@ -29,6 +29,4 @@ TEST_CASE("String to Integer", "[myAtoi]")
     {
         REQUIRE(solution.myAtoi("-91283472332") == -2147483648);
     }
-
-    system("pause");
 }

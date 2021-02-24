@@ -44,6 +44,4 @@ TEST_CASE("Valid Sudoku", "[isValidSudoku]")
         bool result = solution.isValidSudoku(board);
         cout << "The result is " << result << endl;
     }
-
-    system("pause");
 }

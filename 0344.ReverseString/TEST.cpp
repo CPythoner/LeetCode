@@ -18,6 +18,4 @@ TEST_CASE("Reverse String", "[reverseString]")
         string s("A man, a plan, a canal: Panama");
         REQUIRE(solution.reverseString(s) == "amanaP :lanac a ,nalp a ,nam A");
     }
-
-    system("pause");
 }

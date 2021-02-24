@@ -32,6 +32,4 @@ TEST_CASE("Contains Duplicate", "[containsDuplicate]")
         vector<int>nums{ 2, 14, 18, 22, 22 };
         REQUIRE(solution.containsDuplicate(nums) == true);
     }
-
-    system("pause");
 }
