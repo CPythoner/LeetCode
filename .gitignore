@@ -265,3 +265,5 @@ __pycache__/
 /.vscode
 /LeetCode.pptx
 /CodeGraphData
+/cmake-build-debug
+/cmake-build-release
