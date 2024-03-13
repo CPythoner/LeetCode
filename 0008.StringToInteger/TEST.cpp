@@ -1,7 +1,7 @@
-﻿// 0008. String to Integer.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
+// 0008. String to Integer.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //
 
-#include "0008. String to Integer.h"
+#include "0008.StringToInteger.h"
 
 #include <catch2/catch_test_macros.hpp>
 

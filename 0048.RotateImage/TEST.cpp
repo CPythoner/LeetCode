@@ -1,4 +1,4 @@
-#include "0048. Rotate Image.h"
+#include "0048.RotateImage.h"
 
 #include <catch2/catch_test_macros.hpp>
 #include <iostream>
