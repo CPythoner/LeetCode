@@ -44,12 +44,26 @@ jobs:
       # Execute the build.  You can specify a specific target with "--target <NAME>"
       run: cmake --build . --config $BUILD_TYPE
 
+    - name: Run Executables
+      shell: bash
+      working-directory: ${{github.workspace}}/build
+      run: |
+        find . -type f -executable -print0 | while IFS= read -r -d '' executable; do
+          # 获取可执行文件的目录路径
+          dir=$(dirname "$executable")
+          # 获取可执行文件的基础名（不含路径）
+          base=$(basename "$executable")
+          # 检查基础名是否与目录名匹配（假设可执行文件与其父目录同名）
+          dir_base=$(basename "$dir")
+          if [ "$base" = "$dir_base" ]; then
+            echo "Running executable: $executable"
+            "$executable"
+          else
+            echo "Skipping non-matching executable: $executable"
+          fi
+        done
+
     - name: Run Tests
       # 假设测试可在构建目录下通过CTest执行
       working-directory: ./build
       run: ctest -C Release
-
-    # - name: Run
-    #   working-directory: ${{github.workspace}}/build
-    #   shell: bash
-    #   run: ./LeetCode
