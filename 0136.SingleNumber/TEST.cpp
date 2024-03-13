@@ -19,6 +19,4 @@ TEST_CASE("Single Number", "[singleNumber]")
         vector<int>nums{ 4,1,2,1,2 };
         REQUIRE(solution.singleNumber(nums) == 4);
     }
-
-    system("pause");
 }

@@ -39,6 +39,4 @@ TEST_CASE("Plus One", "[plusOne]")
         }
         cout << endl;
     }
-
-    system("pause");
 }

@@ -16,5 +16,4 @@ TEST_CASE("Valid Palindrome", "[isPalindrome]")
         string s = "race a car";
         REQUIRE(solution.isPalindrome(s) == false);
     }
-    system("pause");
 }

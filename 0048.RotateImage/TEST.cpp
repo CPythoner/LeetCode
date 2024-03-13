@@ -32,8 +32,6 @@ TEST_CASE("Rotate Image", "[rotate]")
         solution.rotate(matrix);
         PrintMatrix(matrix);
     }
-
-    system("pause");
 }
 
 void PrintMatrix(const vector<vector<int>> &matrix)

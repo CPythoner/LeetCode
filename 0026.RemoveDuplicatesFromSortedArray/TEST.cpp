@@ -31,5 +31,4 @@ TEST_CASE("Remove Duplicates from Sorted Array", "[removeDuplicates]")
             cout << i << " ";
         }
     }
-    system("pause");
 }

@@ -24,5 +24,4 @@ TEST_CASE("Best Time to Buy and Sell Stock II", "[maxProfit]")
         vector<int>prices{ 7,6,4,3,1 };
         REQUIRE(solution.maxProfit(prices) == 0);
     }
-    system("pause");
 }
