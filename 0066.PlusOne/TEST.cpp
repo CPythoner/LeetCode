@@ -1,7 +1,4 @@
-// 0066. Plus One.cpp: 定义控制台应用程序的入口点。
-//
-
-#include "0066. Plus One.h"
+#include "0066.PlusOne.h"
 
 #include <catch2/catch_test_macros.hpp>
 #include <iostream>
@@ -42,6 +39,4 @@ TEST_CASE("Plus One", "[plusOne]")
         }
         cout << endl;
     }
-
-    system("pause");
 }
