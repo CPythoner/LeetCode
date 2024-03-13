@@ -1,7 +1,4 @@
-﻿// 0125. Valid Palindrome.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
-
-#include "0125. Valid Palindrome.h"
+#include "0125.ValidPalindrome.h"
 
 #include <catch2/catch_test_macros.hpp>
 
