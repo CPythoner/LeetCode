@@ -1,9 +1,28 @@
 import os
 import sys
 
+
+def convert_to_camel_case(s: str) -> str:
+    parts = s.split()
+    return parts[0].lower() + "".join(word.capitalize() for word in parts[1:])
+
+
+def format_dir_name_keep_dot(title: str) -> str:
+    # 直接分割字符串，保留“.”
+    parts = title.split()
+    # 检查并补足第一个部分（数字）至4位，考虑保留点（如果存在）
+    if parts[0].isdigit():
+        parts[0] = parts[0].zfill(4)
+    elif parts[0][-1] == "." and parts[0][:-1].isdigit():
+        parts[0] = parts[0][:-1].zfill(4) + "."
+    # 将第一个部分保持原样，其余部分首字母大写
+    dir_name = parts[0] + "".join(word.capitalize() for word in parts[1:])
+    return dir_name
+
+
 def create_leetcode_directory_and_files(title: str):
     # Process the title to generate the directory name
-    dir_name = "".join(word.capitalize() for word in title.split())
+    dir_name = format_dir_name_keep_dot(title)
 
     # Create the directory
     os.makedirs(dir_name, exist_ok=True)
@@ -12,7 +31,9 @@ def create_leetcode_directory_and_files(title: str):
     header_file_name = f"{dir_name}.h"
     header_file_path = os.path.join(dir_name, header_file_name)
     with open(header_file_path, "w") as header_file:
-        header_file.write("#pragma once\n\n/*\n\n*/\n\nclass Solution\n{\npublic:\n\n};")
+        header_file.write(
+            "#pragma once\n\n/*\n\n*/\n\nclass Solution\n{\npublic:\n\n};"
+        )
 
     # Create the TEST.cpp file
     test_file_name = "TEST.cpp"
@@ -23,7 +44,7 @@ def create_leetcode_directory_and_files(title: str):
             f"""#include "{header_file_name}"
 #include <catch2/catch_test_macros.hpp>
 
-TEST_CASE("{test_name}", "[utest]")
+TEST_CASE("{test_name}", "[{convert_to_camel_case(test_name)}]")
 {{
     // Solution solution;
 
