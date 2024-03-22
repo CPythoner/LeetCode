@@ -47,7 +47,12 @@ public:
 
         path[0][0] = triangle[0][0];
 
-        for (int i = 0; i < n; ++i)
+        for (int i = 1; i < n; ++i)
+        {
+            path[0][i] = 10001;
+        }
+
+        for (int i = 1; i < n; ++i)
         {
             path[i][0] = triangle[i][0] + path[i - 1][0];
             for (int j = 1; j < n; ++j)
