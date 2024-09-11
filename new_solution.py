@@ -1,3 +1,4 @@
+import re
 import os
 import sys
 
@@ -18,6 +19,56 @@ def format_dir_name_keep_dot(title: str) -> str:
     # 将第一个部分保持原样，其余部分首字母大写
     dir_name = parts[0] + "".join(word.capitalize() for word in parts[1:])
     return dir_name
+
+
+def update_readme(title: str, dir_name: str, difficulty: str):
+    readme_path = "README.md"
+    # 根据输入参数处理难度
+    difficulty_map = {
+        "e": "Easy",
+        "E": "Easy",
+        "easy": "Easy",
+        "Easy": "Easy",
+        "m": "Medium",
+        "M": "Medium",
+        "medium": "Medium",
+        "Medium": "Medium",
+        "h": "Hard",
+        "H": "Hard",
+        "hard": "Hard",
+        "Hard": "Hard",
+    }
+    difficulty = difficulty_map.get(difficulty.lower(), "Easy")  # 默认为Easy
+
+    # 生成URLs
+    title_for_url = re.sub(r"^\d+\.\s*", "", title).replace(" ", "-").lower()
+    title_text = re.sub(r"^\d+\.\s*", "", title)
+    problem_url = f"https://leetcode.com/problems/{title_for_url}/"
+    solution_url = (
+        f"https://github.com/CPythoner/LeetCode/blob/master/{dir_name}/{dir_name}.h"
+    )
+    problem_number = dir_name.split(".")[0]
+
+    new_line = f"| {problem_number} | [{title_text}]({problem_url}) | [C++]({solution_url}) | {difficulty} | |\n"
+
+    with open(readme_path, "r+") as readme_file:
+        lines = readme_file.readlines()
+
+        insert_index = len(lines)
+        for i, line in enumerate(lines):
+            match = re.match(r"\|\s*(\d+)\s*\|", line)
+            if match:
+                current_number = int(match.group(1))
+                if current_number >= int(problem_number):
+                    insert_index = i
+                    break
+
+        lines.insert(insert_index, new_line)
+
+        readme_file.seek(0)
+        readme_file.writelines(lines)
+        readme_file.truncate()
+        print(f"Updated README.md file.")
 
 
 def create_leetcode_directory_and_files(title: str):
@@ -84,8 +135,11 @@ target_link_libraries(${PROJECT_NAME} PRIVATE Catch2::Catch2WithMain)
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python script.py '<leetcode_problem_title>'")
+    if len(sys.argv) < 2 or len(sys.argv) > 3:
+        print("Usage: python new_solution.py '<leetcode_problem_title>' '[difficulty]'")
     else:
         title = sys.argv[1]
         create_leetcode_directory_and_files(title)
+        difficulty = sys.argv[2] if len(sys.argv) == 3 else "Easy"
+        dir_name = format_dir_name_keep_dot(title)
+        update_readme(title, dir_name, difficulty)
