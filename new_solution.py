@@ -9,7 +9,7 @@ def convert_to_camel_case(s: str) -> str:
 
 
 def format_dir_name_keep_dot(title: str) -> str:
-    # 直接分割字符串，保留“.”
+    # 直接分割字符串，保留"."
     parts = title.split()
     # 检查并补足第一个部分（数字）至4位，考虑保留点（如果存在）
     if parts[0].isdigit():
@@ -25,20 +25,24 @@ def update_readme(title: str, dir_name: str, difficulty: str):
     readme_path = "README.md"
     # 根据输入参数处理难度
     difficulty_map = {
+        # Easy
         "e": "Easy",
-        "E": "Easy",
         "easy": "Easy",
-        "Easy": "Easy",
+        # Medium
         "m": "Medium",
-        "M": "Medium",
         "medium": "Medium",
-        "Medium": "Medium",
+        # Hard
         "h": "Hard",
-        "H": "Hard",
-        "hard": "Hard",
-        "Hard": "Hard",
+        "hard": "Hard"
     }
-    difficulty = difficulty_map.get(difficulty.lower(), "Easy")  # 默认为Easy
+    difficulty = difficulty_map.get(difficulty.lower())
+    if not difficulty:
+        print(f"Invalid difficulty: {difficulty}")
+        print("Must be one of:")
+        print("  - Easy:   e, easy")
+        print("  - Medium: m, medium")
+        print("  - Hard:   h, hard")
+        sys.exit(1)
 
     # 生成URLs
     title_for_url = re.sub(r"^\d+\.\s*", "", title).replace(" ", "-").lower()
@@ -136,11 +140,16 @@ target_link_libraries(${PROJECT_NAME} PRIVATE Catch2::Catch2WithMain)
 
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2 or len(sys.argv) > 3:
-        print("Usage: python new_solution.py '<leetcode_problem_title>' '[difficulty]'")
+    if len(sys.argv) != 3:
+        print("Usage: python new_solution.py '<leetcode_problem_title>' <difficulty>")
+        print("Difficulty must be one of:")
+        print("  - Easy:   e, easy")
+        print("  - Medium: m, medium")
+        print("  - Hard:   h, hard")
+        sys.exit(1)
     else:
         title = sys.argv[1]
+        difficulty = sys.argv[2]
         create_leetcode_directory_and_files(title)
-        difficulty = sys.argv[2] if len(sys.argv) == 3 else "Easy"
         dir_name = format_dir_name_keep_dot(title)
         update_readme(title, dir_name, difficulty)
