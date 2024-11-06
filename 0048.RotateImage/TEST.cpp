@@ -1,4 +1,4 @@
-#include "0048. Rotate Image.h"
+#include "0048.RotateImage.h"
 
 #include <catch2/catch_test_macros.hpp>
 #include <iostream>
@@ -32,8 +32,6 @@ TEST_CASE("Rotate Image", "[rotate]")
         solution.rotate(matrix);
         PrintMatrix(matrix);
     }
-
-    system("pause");
 }
 
 void PrintMatrix(const vector<vector<int>> &matrix)
