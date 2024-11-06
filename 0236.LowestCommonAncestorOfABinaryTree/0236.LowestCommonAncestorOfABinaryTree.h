@@ -54,12 +54,7 @@
     如果 p、q 都在右子树，那 LCA 在右子树中
 */
 
-struct TreeNode {
-    int val;
-    TreeNode *left;
-    TreeNode *right;
-    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
-};
+#include "tree_utils.h"
 
 class Solution {
 public:

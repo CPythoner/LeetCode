@@ -12,6 +12,7 @@ file(GLOB UTILSSRCS
     ${CMAKE_SOURCE_DIR}/utils/*.h
     ${CMAKE_SOURCE_DIR}/utils/*.hpp)
 
+include_directories(${CMAKE_SOURCE_DIR}/utils)
 add_executable(${PROJECT_NAME} ${SOURCES} ${UTILSSRCS})
 
 target_link_libraries(${PROJECT_NAME} PRIVATE Catch2::Catch2WithMain)
