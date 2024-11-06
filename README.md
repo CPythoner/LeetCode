@@ -21,18 +21,13 @@
   - [4.7 动态规划](#47-动态规划)
   - [4.8 数学](#48-数学)
 
-
 # 1. 项目说明
 
 C++代码工程使用 CMake 创建并测试。
 
-
-
 测试依赖：
 
 - [Catch2](https://github.com/catchorg/Catch2)
-
-
 
 # 2. 题目列表
 
@@ -61,7 +56,7 @@ C++代码工程使用 CMake 创建并测试。
 | 0142 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | [C++](https://github.com/CPythoner/LeetCode/blob/master/0142.%20Linked%20List%20Cycle%20II/0142.%20Linked%20List%20Cycle%20II.h) | Medium     |                                                              |
 | 0144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [C++](https://github.com/CPythoner/LeetCode/blob/master/0144.%20Binary%20Tree%20Preorder%20Traversal/0144.%20Binary%20Tree%20Preorder%20Traversal.h) | Medium     |                                                              |
 | 0145 | [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [C++](https://github.com/CPythoner/LeetCode/blob/master/0145.%20Binary%20Tree%20Postorder%20Traversal/0145.%20Binary%20Tree%20Postorder%20Traversal.h) | Hard       |                                                              |
-| 0160 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | [C++](https://github.com/CPythoner/LeetCode/blob/master/0160.%20Intersection%20of%20Two%20Linked%20Lists/0160.%20Intersection%20of%20Two%20Linked%20Lists.h) | Easy       |                                                              |
+| 0160 | [Intersection of Two Linked Lists（相交链表）](https://leetcode.cn/problems/intersection-of-two-linked-lists/) | [C++](0160.IntersectionOfTwoLinkedLists/0160.IntersectionOfTwoLinkedLists.h) | Easy | 双指针法 |                                                             |
 | 0167 | []()                                                         |                                                              |            | [note](./0167.TwoSumII/README.md)                            |
 | 0189 | [Rotate Array](https://leetcode.com/problems/rotate-array/)  | [C++](https://github.com/CPythoner/LeetCode/blob/master/0189.%20Rotate%20Array/0189.%20Rotate%20Array.h) | Easy       |                                                              |
 | 0206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [C++](https://github.com/CPythoner/LeetCode/blob/master/0206.%20Reverse%20Linked%20List/0206.%20Reverse%20Linked%20List.h) | Easy       |                                                              |
